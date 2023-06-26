@@ -4,29 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin-Recipes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">   
+    <style>
+        *{
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+        }
+
+        .theh1{
+            text-align: center;
+            font-size: 64px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 55px;
+        }
+
+        .itm{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           gap: 15px;
+           border: 2px solid black;
+           padding: 15px 20px;
+           border-radius: 4px;
+        }
+
+        .container div img{
+            width: 200px;
+            border-radius: 4px;
+        }
+
+        .container div a{
+            text-align: center;
+            display: block;
+            margin: 10px auto;
+            color: #800000;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        
+        .container i{
+            font-size: 14px;
+        }
+
+        .more{
+            text-align: center;
+            /* border: 1px solid #000; */
+            display: block;
+            width: 140px;
+            margin: 20px 60px 30px auto;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: #e6e6e6;
+            opacity: 0.8;
+            transition: 0.1s;
+        }
+
+        .more:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .more a{
+            color: #190000;
+            text-decoration: none;
+        }
+        
+        .more i{
+            font-size: 14px;
+        }
+
+        
+    </style>
 </head>
 <body>
-    <h1>Odin Recipes</h1>
+    <h1 class="theh1">Odin Recipes</h1>
+
     <div class="container">
-        <div class="cobb">
-            <img src="./recipes/images/cobb-salad.jpg" alt="Cobb-salad photo">
-            <a href="./recipes/cobb-salad.html" target="_blank">Cobb salad</a>
+        <div class="cobb itm">
+            <img src="recipes/images/cobb-salad.jpg" alt="Cobb-salad photo">
+            <a href="recipes/cobb-salad.html" target="_blank">Cobb salad   <i class="fa-solid fa-chevron-right"></i></a>
         </div>
-        <div class="hotdog">
-            <img src="./recipes/images/hot-dog-mummies.jpg" alt="hot-dog-mummies photo">
-            <a href="./recipes/hotdog-mummies.html" target="_blank">Hotdog mummies</a>
+        <div class="hotdog itm">
+            <img src="recipes/images/hot-dog-mummies.jpg" alt="hot-dog-mummies photo">
+            <a href="recipes/hotdog-mummies.html" target="_blank">Hotdog mummies   <i class="fa-solid fa-chevron-right"></i></a>
         </div>
-        <div class="denver">
-            <img src="./recipes/images/the-denver-omelet.jpg" alt="the-denver-omelet photo">
-            <a href="./recipes/the-denver-omelet.html" target="_blank">The denver salad</a>
+        <div class="denver itm">
+            <img src="recipes/images/the-denver-omelet.jpg" alt="the-denver-omelet photo">
+            <a href="recipes/the-denver-omelet.html" target="_blank">The denver salad   <i class="fa-solid fa-chevron-right"></i></a>
         </div>
-        <div class="bean">
-            <img src="./recipes/images/three-bean-salad.jpg" alt="three-bean-salad photo">
-            <a href="./recipes/three-bean-salad.html" target="_blank">Three bean salad</a>
+        <div class="bean itm">
+            <img src="recipes/images/three-bean-salad.jpg" alt="three-bean-salad photo">
+            <a href="recipes/three-bean-salad.html" target="_blank">Three bean salad   <i class="fa-solid fa-chevron-right"></i></a>
         </div>
+        
     </div>
-    <div class="more">
-        <a href="https://www.allrecipes.com/" target="_blank">More recipes</a>
-    </div>
+        <div class="more">
+            <a href="https://www.allrecipes.com/" target="_blank">More recipes  <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <script src="https://kit.fontawesome.com/f5324fa892.js" crossorigin="anonymous"></script>
 </body>
 </html>
